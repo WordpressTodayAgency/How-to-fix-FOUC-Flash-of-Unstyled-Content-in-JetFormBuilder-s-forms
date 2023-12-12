@@ -8,13 +8,13 @@ To fix the form, I had to add a CSS class to the form itself. For this project I
 1. Add the class .my_form to the JetFormBuilder form. (Of course, you can change the name of the class but don't forget to change it also in the CSS and the jQuery/Javascript code).
 
 2. Add this CSS code
-
+```
 .my_form {
     display: none;
 }
-
+```
 3. Add this Jquery code
-
+```
 jQuery(document).ready(function($) { 
 
 setTimeout(function() { 
@@ -22,9 +22,10 @@ setTimeout(function() {
 $('.my_form').fadeIn(1000); // This cool animation takes 1 second }, 1000); 
 
 });
+```
 
 NOTE: in case you don't want to use jQuery, here is the javascript version:
-
+```
 // Listen for the DOMContentLoaded event to ensure the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Set a timeout to delay the animation after the page is loaded
@@ -48,5 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, 1000); // Delay of 1000 milliseconds (1 second) before starting the animation
 });
+```
 
 That's it!
